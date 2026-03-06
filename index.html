@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Women's Day 8/3 🌸</title>
+  <link rel="shortcut icon" href="image.png" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursor-ring"></div>
+
+  <!-- Falling petals canvas -->
+  <canvas id="petal-canvas"></canvas>
+  <!-- Confetti canvas -->
+  <canvas id="confetti-canvas"></canvas>
+  <!-- Background -->
+  <div class="bg-gradient"></div>
+
+  <!-- ========== HEADER ========== -->
+  <header>
+    <div class="float-flower">🌸</div>
+    <div class="float-flower">🌺</div>
+    <div class="float-flower">🌷</div>
+    <div class="float-flower">💐</div>
+    <div class="float-flower">🌼</div>
+
+    <div class="header-badge"><span>🎀</span> Kỉ niệm đặc biệt · 2026</div>
+    <div class="header-date">8/3</div>
+    <h1 class="header-title">
+      Happy International <em>Women's Day</em>
+    </h1>
+    <div class="header-divider"></div>
+    <p class="header-sub">
+      Gửi đến 5 bạn nữ tuyệt vời của lớp — những đóa hoa rực rỡ nhất,
+      những trái tim ấm áp nhất. Ngày hôm nay là của các bạn! 🌸
+    </p>
+  </header>
+
+  <!-- ========== WISH SECTION ========== -->
+  <div class="wrapper">
+
+    <section id="wish-section">
+      <p class="section-label">✨ Lời chúc từ trái tim</p>
+      <h2 class="section-title">Gửi tặng những <strong>cô gái</strong> đặc biệt</h2>
+      <div class="wish-card">
+        <p class="wish-text">
+          Các bạn là những ngôi sao sáng nhất của lớp chúng ta —
+          thông minh, dũng cảm và rực rỡ theo cách riêng của mình.
+          Mỗi ngày có các bạn là mỗi ngày thêm màu sắc và tiếng cười.
+          <br /><br />
+          Nhân ngày <em style="font-style:normal;color:var(--rose);font-weight:600;">Quốc tế Phụ nữ 8/3</em>,
+          xin gửi đến các bạn những lời chúc chân thành nhất —
+          mãi mãi tỏa sáng, luôn được yêu thương, và chinh phục mọi ước mơ!
+        </p>
+        <div class="wish-icons">
+          <span class="wish-icon">🌸</span>
+          <span class="wish-icon">💖</span>
+          <span class="wish-icon">🌺</span>
+          <span class="wish-icon">✨</span>
+          <span class="wish-icon">🌷</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GIRLS SECTION ========== -->
+    <section id="girls-section">
+      <p class="section-label">💐 Những đóa hoa của lớp</p>
+      <h2 class="section-title">5 bạn nữ <strong>tuyệt vời</strong></h2>
+      <div class="girls-grid">
+
+        <div class="girl-card">
+          <div class="girl-avatar">🌸</div>
+          <div class="girl-name">Bạn Quỳnh</div>
+          <div class="girl-wish">Luôn rạng rỡ và tự tin như mùa xuân 🌱</div>
+        </div>
+
+        <div class="girl-card">
+          <div class="girl-avatar">🌺</div>
+          <div class="girl-name">Bạn Sương</div>
+          <div class="girl-wish">Xinh đẹp, thông minh và đầy nghị lực 💪</div>
+        </div>
+
+        <div class="girl-card">
+          <div class="girl-avatar">🌷</div>
+          <div class="girl-name">Bạn Loan</div>
+          <div class="girl-wish">Tràn đầy năng lượng và niềm vui mỗi ngày ☀️</div>
+        </div>
+
+        <div class="girl-card">
+          <div class="girl-avatar">💐</div>
+          <div class="girl-name">Bạn Linh</div>
+          <div class="girl-wish">Dịu dàng, ấm áp và thành công vượt bậc 🌟</div>
+        </div>
+
+        <div class="girl-card">
+          <div class="girl-avatar">🌼</div>
+          <div class="girl-name">Bạn Xuyến</div>
+          <div class="girl-wish">Luôn tỏa sáng và truyền cảm hứng cho mọi người 🦋</div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section id="cta-section">
+      <p class="section-label">🎁 Ngày của các bạn</p>
+      <h2 class="section-title">Nhấn để <strong>gửi yêu thương</strong></h2>
+      <div class="cta-wrap">
+        <button class="btn-wish" id="btn-wish">
+          <span class="btn-icon">💌</span>
+          Gửi lời chúc
+        </button>
+      </div>
+    </section>
+
+  </div><!-- end .wrapper -->
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <p class="footer-text">
+      "Chúc tất cả các bạn nữ trong lớp luôn xinh đẹp, vui vẻ và thành công."
+    </p>
+    <div class="footer-hearts">🌸 💖 🌺 💜 🌷</div>
+  </footer>
+
+  <!-- ========== POPUP ========== -->
+  <div class="popup-overlay" id="popup-overlay">
+    <div class="popup">
+      <button class="popup-x" id="popup-x">✕</button>
+      <span class="popup-emoji">🎉</span>
+      <h3 class="popup-title">Lời chúc đã được gửi!</h3>
+      <p class="popup-body">
+        Chúc các bạn nữ trong lớp luôn rạng rỡ, hạnh phúc và thành công
+        trong mọi điều. Hôm nay là ngày của các bạn — hãy tỏa sáng thật rực rỡ nhé! 🌸💖
+      </p>
+      <button class="popup-close" id="popup-close">Cảm ơn! 🌷</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
